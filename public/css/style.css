@@ -1,0 +1,243 @@
+body {
+    font-family: "Montserrat";
+}
+
+.bg-green {
+    background-color: #00600f;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00600f;
+    border-bottom: 1px solid #388e3c;
+}
+
+.nav-item {
+    margin-right: 24px;
+    font-weight: 300;
+}
+
+.nav-item.active a {
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-biasa {
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-link span {
+    color: #00600f;
+    font-weight: 600;
+}
+
+.brands span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Carousel */
+.carousel {
+    height: 450px;
+    background-color: #00600f;
+    color: white;
+}
+
+.carousel p {
+    font-weight: 200;
+}
+
+/* Card */
+.item-card {
+    font-weight: 600;
+}
+
+.s-card {
+    box-shadow: 0 0 2px 2px #00600f;
+    margin: 8px;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+    height: fit-content;
+}
+
+.s-card a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.s-card span {
+    font-weight: 530;
+    font-size: 20px;
+}
+
+.features h3,
+.cart-header h3,
+.checkout-modal-success h3 {
+    color: #000000;
+    font-weight: 600;
+}
+
+.features p,
+.features a {
+    font-weight: 400;
+    color: #9e9e9e;
+}
+
+/* Figure */
+.figure h5 {
+    color: #171717;
+}
+
+.figure-img {
+    position: relative;
+}
+
+.figure-img a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.figure-img:hover a {
+    opacity: 1;
+}
+
+.overlay-figure {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: 0.8s;
+    padding: 110px 50px 100px 50px;
+}
+
+.overlay-figure:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-figure img {
+    max-height: 100%;
+    margin-top: 40px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-figure:target img {
+    animation: zoomandfade 0.8s;
+}
+
+.overlay-figure .close-txt {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    top: 90px;
+    left: 49%;
+    margin-left: -35px;
+    opacity: 0;
+}
+
+.overlay-figure:target .close-txt {
+    animation: slidedownfade 0.5s 0.5s forwards;
+}
+
+/* Animasi */
+@keyframes zoomandfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedownfade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-top: 100px;
+}
+
+.cart-breadcrumb {
+    margin-top: 50px;
+}
+
+/* Button */
+.btn-product {
+    margin: 50px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaef;
+}
+
+.btn-product .btn {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Checkout */
+.checkout-detail {
+    background-color: #f6f7fb;
+    border: 1px solid #eaeaea;
+    color: #171717;
+}
+
+/* Footer */
+
+.footer p,
+.footer a {
+    font-weight: 250;
+    color: #cfd8dc;
+}
+
+.footer-category {
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.c-title {
+    margin: 5px 0 20px 0;
+}
+
+.table {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+    .navbar-brand {
+        width: 50%;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+    .table {
+        font-size: 15px;
+    }
+}
